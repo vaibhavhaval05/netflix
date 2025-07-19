@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Style</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <style>
+    body {
+      background-color: #141414;
+      color: white;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: black;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center; 
+    }
+
+    .navbar button {
+      padding: 8px 16px;
+      border: none;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      flex-shrink: 0; 
+    }
+
+    .banner {
+      position: relative;
+      text-align: center;
+      margin-bottom: 30px;
+      background-color: black;
+    }
+
+    .banner img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .banner_buttons {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .banner_buttons button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    h3 {
+      margin: 20px;
+      font-size: 1.6rem;
+    }
+
+    .movie_row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0 20px 40px 20px;
+    }
+
+    .movie_card {
+      width: 160px;
+      height: 220px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .movie_card:hover {
+      transform: scale(1.08);
+    }
+
+    .movie_card a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <button>Movies</button>
+    <button>Categories</button>
+  </nav>
+
+  <header class="banner">
+    <img src="hit.jpg" alt="Main Show">
+    <div class="banner_buttons">
+      <button>Play</button>
+      <button>+ My List</button>
+    </div>
+  </header>
+
+  <h3>Popular Titles</h3>
+  <section class="movie_row">
+    <div class="movie_card" style="background-image: url('movie1.jpg');">
+      <a href="n1.html"></a>
+    </div>
+    <div class="movie_card" style="background-image: url('movie2.jpeg');">
+      <a href="n1.html"></a>
+    </div>
+    <div class="movie_card" style="background-image: url('movie3.webp');">
+      <a href="n1.html"></a>
+    </div>
+    <div class="movie_card" style="background-image: url('movie4.jpeg');">
+      <a href="n1.html"></a>
+    </div>
+    <div class="movie_card" style="background-image: url('movie5.jpg');">
+      <a href="n1.html"></a>
+    </div>
+    <div class="movie_card" style="background-image: url('movie6.jpeg');">
+      <a href="n1.html"></a>
+    </div>
+    <div class="movie_card" style="background-image: url('movie7.webp');">
+      <a href="n1.html"></a>
+    </div>
+  </section>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
